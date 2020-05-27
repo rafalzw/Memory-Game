@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin bg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: solid 3px black;
+    height: 33.3333vh;
+    flex-basis: 15%;
+    flex-grow: 1;
+    background-color: gray;
+
+    &--apple {
+        background: url('../assets/apple.png');
+        @include bg;
+    }
+
+    &--banana {
+        background: url('../assets/banana.png');
+        @include bg;
+    }
+
+    &--cherry {
+        background: url('../assets/cherry.png');
+        @include bg;
+    }
+
+    &--grapefruit {
+        background: url('../assets/grapefruit.png');
+        @include bg;
+    }
+
+    &--grapes {
+        background: url('../assets/grapes.png');
+        @include bg;
+    }
+
+    &--kiwi {
+        background: url('../assets/kiwi.png');
+        @include bg;
+    }
+
+    &--pear {
+        background: url('../assets/pear.png');
+        @include bg;
+    }
+
+    &--strawberry {
+        background: url('../assets/strawberry.png');
+        @include bg;
+    }
+
+    &--watermelon {
+        background: url('../assets/watermelon.png');
+        @include bg;
+    }
+
+    &--off {
+        background-image: none;
+        background-color: rgb(18, 165, 18);
+    }
+
+    &--hidden {
+        background-image: none;
+        background-color: darkgray;
+    }
+
+    @media (orientation: portrait) {
+        & {
+            flex-basis: 30%;
+            height: 16.6666vh;
+            border: solid 1px black;
+        }
+    }
+}
