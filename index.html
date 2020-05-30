@@ -5,28 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
-    <div class="card" data-card></div>
+    <section class="start-wrap">
+        <div class="start">
+            <h1 class="start__title">Game Memory</h1>
+            <span class="start__span">Level up your memory for free with this memory card game. <p> Flip the cards and
+                    match
+                    the tiles together in pairs.</p></span>
+            <button class="start__button" data-start>Start Game</button>
+        </div>
+    </section>
+    <section class="bar-elements">
+        <div class="element">
+            <span class="element__title">Time:</span>
+            <span class="element__value" data-time></span>
+        </div>
+        <div class="element">
+            <span class="element__title">Moves:</span>
+            <span class="element__value" data-moves></span>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+        <div class="card" data-card></div>
+    </section>
     <script src="js/index.js"></script>
     <script>
         const memory = new Memory;
