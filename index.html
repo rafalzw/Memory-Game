@@ -10,13 +10,21 @@
 </head>
 
 <body>
-    <section class="start-wrap">
-        <div class="start">
-            <h1 class="start__title">Game Memory</h1>
-            <span class="start__span">Level up your memory for free with this memory card game. <p> Flip the cards and
+    <section class="window-wrap" data-startWindow>
+        <div class="window">
+            <h1 class="window__title">Game Memory</h1>
+            <span class="window__span">Level up your memory for free with this memory card game. <p> Flip the cards and
                     match
                     the tiles together in pairs.</p></span>
-            <button class="start__button" data-start>Start Game</button>
+            <button class="window__button" data-start>Start Game</button>
+        </div>
+    </section>
+    <section class="window-wrap window-wrap--hidden" data-endWindow>
+        <div class="window">
+            <h1 class="window__title">WINNER</h1>
+            <span class="window__span" data-timeResult></span>
+            <span class="window__span" data-movesResult></span>
+            <button class="window__button" data-start>New Game</button>
         </div>
     </section>
     <section class="bar-elements">

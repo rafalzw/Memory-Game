@@ -1,0 +1,11 @@
+[33mcommit d8897b5277b8caf24b5092ac2fa35ccd1d410f4d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rafal Zwierz <zwierz.rafal@gmail.com>
+Date:   Sat May 30 22:05:17 2020 +0200
+
+    add start window and start method
+
+[33mcommit a7f75b1b09313f53da0ea046432d9c42626bcab9[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Rafal Zwierz <zwierz.rafal@gmail.com>
+Date:   Wed May 27 23:25:02 2020 +0200
+
+    Initial commit

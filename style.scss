@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 }
 
-.start-wrap {
+.window-wrap {
     z-index: 1;
     display: block;
     position: fixed;
@@ -25,7 +25,7 @@
         transform: scale(0);
     }
 
-    .start {
+    .window {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -47,6 +47,7 @@
 
         &__span {
             font-size: 30px;
+            display: block;
         }
 
         &__button {
@@ -57,7 +58,14 @@
             font-size: 36px;
             font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
+            background-color: #fff;
             cursor: pointer;
+            transition: background-color .3s ease, color .3s ease;
+
+            &:hover {
+                background-color: rgb(32, 104, 105);
+                color: #fff;
+            }
         }
     }
 }
@@ -142,13 +150,16 @@
         }
 
         &--off {
-            background-image: none;
-            background-color: rgb(18, 165, 18);
+            background: url('../assets/correct.png');
+            @include bg;
+            opacity: .5;
+            // background-image: none;
+            // background-color: rgb(18, 165, 18);
         }
 
         &--hidden {
             background-image: none;
-            background-color: darkgray;
+            background-color: rgb(39, 120, 122);
         }
 
         @media (orientation: portrait) {
